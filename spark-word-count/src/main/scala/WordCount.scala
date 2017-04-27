@@ -19,10 +19,11 @@ object WordCount {
 //    val words = lines.flatMap(word=>word.split(" "))
     val words = lines.flatMap(_.split(" "))
     //1-Map each word with 1 and aggregate using reduceByKey
+    //  val wordCounts = words.map(x => (x, 1)).reduceByKey((w1,w2)=>w1+w2)
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
-    val wordCountWithAggregate = words.map(x=> (x,1)).aggregateByKey(0)((k,v) => v.toInt+k, (v,k) => k+v).collect
+
+
     println("the word count of " + wordCounts)
-    println("the word count of aggregate " + wordCountWithAggregate.toList)
   }
 
 }
