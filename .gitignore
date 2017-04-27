@@ -3,8 +3,8 @@
 
 #intellij spefic
 #**/.idea/*.xml
-./*/.idea/**
-./*/.idea/*
+*/.idea/**
+
 # sbt specific
 **/.cache
 **/.history
