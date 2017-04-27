@@ -4,6 +4,7 @@
 #intellij spefic
 #**/.idea/*.xml
 ./*/.idea/**
+./*/.idea/*
 # sbt specific
 **/.cache
 **/.history
