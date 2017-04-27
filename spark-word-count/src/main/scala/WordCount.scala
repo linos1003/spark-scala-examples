@@ -14,7 +14,7 @@ object WordCount {
     // Create the context
     val ssc = new SparkContext(sparkConf);
     //Create an RDD from texte file
-    val lines = ssc.textFile("/home/linos/Documents/example_text.txt");
+    val lines = ssc.textFile("example_text.txt");
     // Create a list of words using flatMap
 //    val words = lines.flatMap(word=>word.split(" "))
     val words = lines.flatMap(_.split(" "))
