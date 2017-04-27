@@ -22,8 +22,9 @@ object WordCount {
     //  val wordCounts = words.map(x => (x, 1)).reduceByKey((w1,w2)=>w1+w2)
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
 
+    println("word count result:")
+     wordCounts.foreach(println)
 
-    println("the word count of " + wordCounts)
   }
 
 }
