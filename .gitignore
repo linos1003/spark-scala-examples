@@ -2,7 +2,7 @@
 **/*.log
 
 #intellij spefic
-**/.idea/*
+**/.idea/
 # sbt specific
 **/.cache
 **/.history
