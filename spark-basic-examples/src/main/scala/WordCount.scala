@@ -16,14 +16,14 @@ object WordCount {
     //Create an RDD from texte file
     val lines = ssc.textFile("example_text.txt");
     // Create a list of words using flatMap
-//    val words = lines.flatMap(word=>word.split(" "))
+    //    val words = lines.flatMap(word=>word.split(" "))
     val words = lines.flatMap(_.split(" "))
     //1-Map each word with 1 and aggregate using reduceByKey
     //  val wordCounts = words.map(x => (x, 1)).reduceByKey((w1,w2)=>w1+w2)
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
 
     println("word count result:")
-     wordCounts.foreach(println)
+    wordCounts.foreach(println)
 
   }
 

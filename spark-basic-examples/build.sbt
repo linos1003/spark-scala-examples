@@ -1,4 +1,4 @@
-name := "spark-word-count"
+name := "spark-basic-examples"
 
 version := "1.0"
 

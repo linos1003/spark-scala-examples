@@ -18,7 +18,7 @@ object MoreExamples {
     val wordsMappedWithLength = wordsWhichContainedM.map(word => (word, word.length))
     wordsMappedWithLength.foreach(println)
     val average = wordsMappedWithLength.reduce((w1, w2) => ("mean", (w1._2 + w2._2) / 2))
-    println("average length of words that contains m is : "+average)
+    println("average length of words that contains m is : " + average)
   }
 
 
