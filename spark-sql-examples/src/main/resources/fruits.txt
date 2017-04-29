@@ -1,0 +1,3 @@
+0,banane
+1,orange
+2,kiwi
